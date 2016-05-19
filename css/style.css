@@ -1,0 +1,327 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	line-height: 2em;
+	height:100%;
+}
+
+.container {
+	min-height:100%;
+	position:relative;
+}
+
+.content {
+	padding-bottom: 200px;
+}
+
+.icon {
+	background-color: #592047;
+	padding: 10px;
+	padding-left: 15px;
+	margin: 10px;
+}
+
+.desktopNav {
+	display: none;
+}
+
+/*nav li,*/
+h1,
+h3 {
+	font-family: 'Candal', sans-serif;
+}
+
+h1 {
+	text-align: center;
+	color: #000;
+	/*text-shadow: 4px 4px #F4DD51;*/
+	margin: 10px auto;
+	font-size: 1.8em;
+	padding: 0px 10px;
+}
+
+h2 {
+	text-align: left;
+	width: 90%;
+	margin: auto;
+	color: #592047;
+}
+
+p,
+.orgDropdown,
+section ul {
+	width: 90%;
+	margin: auto;
+}
+
+section ul {
+	/*margin-left: 100px;*/
+	font-style: italic;
+}
+
+p a {
+	/*text-decoration: none;*/
+	color: #592047;
+}
+
+.orgDropdown form {
+	margin: 15px auto;
+}
+
+h2 {
+	margin-top: 30px;
+}
+
+.logo {
+	text-align: center;
+	background-image: url("../images/town-small.jpg");
+	background-repeat: no-repeat;
+}
+
+.logo img {
+	width: 200px;
+	margin-top: 12px;
+}
+
+/*section.intro {
+	height: 100px;
+	background-color: yellow;
+}*/
+
+select[title="SelectAState"] {
+	width: 210px;
+	height: 50px;
+	border: solid 2px black;
+	font-size: 1em;
+}
+
+.circleNumber {
+	background-color: #592047;
+	border-radius: 50%;
+	width: 5em;
+	height: 5em;
+	margin: 20px auto;
+}
+
+.circleNumber p {
+	color: #F4DD51;
+	width: 100%;
+	text-align: center;
+	padding-top: 23px;
+	font-size: 2em;
+}
+
+.scroll-top-wrapper {
+    position: fixed;
+	opacity: 0;
+	visibility: hidden;
+	overflow: hidden;
+	text-align: center;
+	z-index: 99999999;
+    background-color: #592047;
+	color: #eeeeee;
+	width: 50px;
+	height: 48px;
+	line-height: 48px;
+	right: 30px;
+	bottom: 30px;
+	padding-top: 2px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.scroll-top-wrapper:hover {
+	background-color: #888888;
+}
+.scroll-top-wrapper.show {
+    visibility:visible;
+    cursor:pointer;
+	opacity: 1.0;
+}
+.scroll-top-wrapper i.fa {
+	line-height: inherit;
+}
+
+
+footer {
+	background-color: #592047;
+	height: 125px;
+	width: 100%;
+	margin-top: 150px;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+
+footer p {
+	font-size: .75em;
+	text-align: center;
+	color: white;
+	padding-top: 25px;
+}
+
+
+@media only screen and (min-width: 769px) {
+
+	
+	.logo img {
+		width: 200px;
+		margin-top: 36px;
+	}
+
+	.logo {
+		background-image: url("../images/town-medium.jpg");
+		margin-top: 48px;
+	}
+
+
+	header.mobilenav,
+	a.icon {
+		display: none;
+	}
+
+	.desktopNav {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		display: block;
+		margin: auto;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		background-color: #592047;
+	}
+
+	.desktopNav ul {
+		display: flex;
+		list-style: none;
+		width: 90%;
+		margin: auto;
+		/*width: 100%;*//*
+		display: flex;*/
+		/*flex-flow: row wrap;
+		flex-direction: row;*/
+		justify-content: space-around;
+		/*height: 50px;*/
+	}
+
+	.desktopNav ul li {
+		font-size: .75em;
+		text-transform: uppercase;
+	}
+
+	.desktopNav ul li a {
+		text-decoration: none;
+		color: white;
+		/*
+		text-decoration: none;
+		border: solid red 1px;*/
+	}
+
+	.desktopNav ul li a:hover {
+		color: yellow;
+	}
+
+	.desktopNav ul li a.page {
+		color: yellow;
+	}
+}
+
+
+
+@media only screen and (min-width: 960px) {
+
+	.logo img {
+		width: 300px;
+	}
+
+	.logo {
+		background-image: url("../images/town-large.jpg");
+		background-size: cover;
+		height: 400px;
+	}
+
+	.desktopNav ul li {
+		font-size: 1em;
+	}
+
+	h1 {
+		font-size: 2.6em;
+		margin: 45px auto;
+	}
+
+	h2 {
+		font-size: 1.5em;
+		width: 750px;
+}
+
+	p,
+	.orgDropdown,
+	section ul {
+		width: 750px;
+		margin: auto;
+		font-size: 1.2em;
+	}
+
+	.circleNumber {
+		background-color: #592047;
+		border-radius: 50%;
+		width: 7em;
+		height: 7em;
+		margin: 40px auto;
+}
+
+	.circleNumber p {
+		padding-top: 35px;
+		font-size: 3.5em;
+}
+
+	footer p {
+		font-size: .875em;
+	}
+
+}
+
+@media only screen and (min-width: 1250px) {
+
+	.desktopNav ul {
+		width: 80%;
+	}
+
+	h2 {
+	width: 850px;
+}
+
+	p,
+	.orgDropdown,
+	section ul {
+		width: 850px;
+	}
+
+}
+
+
+
+@media only screen and (min-width: 1850px) {
+
+	.desktopNav ul {
+		width: 70%;
+	}
+
+}
+

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Hometown Label Savers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hamburgler.css">
+    <script src="http://code.jquery.com/jquery-2.1.3.js"></script>
+    <script src="js/hamburgler.js"> </script>
+    <link href='https://fonts.googleapis.com/css?family=Candal' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" id="font-awesome-css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" type="text/css" media="screen">
+</head>
+
+
+<body>
+  <div class="container"> 
+
+ <header>
+
+
+<nav class="mobilenav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="getStarted.html">Get Started</a></li>
+    <li><a href="organizations.html">Organizations</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="terms.html">Terms</a></li>
+    <li><a href="http://www.iga.com/consumer/locator.aspx" target="_blank">Find My IGA</a></li>
+    <li><a href="contact.html">Contact</a></li>
+</nav>
+  
+  <a href="javascript:void(0)" class="icon">
+    <div class="hamburger">
+    <div class="menui top-menu"></div>
+    <div class="menui mid-menu"></div>
+    <div class="menui bottom-menu"></div>
+    </div>
+  </a>
+
+
+  <nav class="desktopNav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="getStarted.html">Get Started</a></li>
+      <li><a href="organizations.html">Organizations</a></li>
+      <li><a href="faq.html" class="page">FAQ</a></li>
+      <li><a href="terms.html">Terms</a></li>
+      <li><a href="http://www.iga.com/consumer/locator.aspx" target="_blank">Find My IGA</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav><!--desktopNav"-->
+
+  <div class="logo">
+    <a href="index.html"><img src="images/HometownLabelSaversLogo.png"></a>
+  </div>
+
+  </header>
+<div class="content">
+
+<div class="scroll-top-wrapper ">
+  <span class="scroll-top-inner">
+    <i class="fa fa-2x fa-arrow-circle-up"></i>
+  </span>
+</div>
+
+  <section class="intro">
+    <h1>Frequently Asked Questions</h1>
+    <!-- <p>Raise cash for Hometown organizations—eligible schools, churches, or non-profits—simply by saving original UPC barcode labels from eligible IGA Exclusive Brand products*.</p> -->
+  </section>
+
+  <section>
+    <h2>Are all IGA Exclusive Brand products participating in Hometown Label Savers?</h2>
+    <p>All IGA Exclusive Brand products are participating in Hometown Label Savers, excluding aluminum products, store-made products and fresh meat products. Barcodes will begin with 41270.</p>
+
+    <h2>Can shoppers mail labels to the IGA office?</h2>
+    <p>No, shoppers should send labels to the school/church/organization's approved program coordinator. Only the approved coordinator can send  labels to the IGA office, using the <a href="http://www.igaalliance.com/events/hometownlabelsavers/docs/redemption_form.pdf" target="_blank">label redemption form</a> provided by IGA.</p>
+
+    <h2>How should I wrap my labels when I send them in?</h2>
+    <p>We recommend putting each bundle of 500 labels in a resealable bag, envelope or secure with rubber bands. Please indicate the number of labels you are redeeming.</p>
+
+    <h2>Can I send in more than 500 labels per year?</h2>
+    <p>Yes, please submit as many bundles of 500 labels as you can!</p>
+
+    <h2>Do we have to send in whole labels?</h2>
+    <p>Just cut around the UPC symbol. It's not necessary to send in the whole label.</p>
+
+    <h2>How should I mail the labels?</h2>
+    <p>We recommend selecting a method of mailing which provides you with a receipt of delivery, such as Certified Mail. IGA USA is not responsible for labels not received by IGA Hometown Label Savers, at the address herein, nor will redemption thereof be honored.</p>
+
+    <h2>Do I need to register every year?</h2>
+    <p>No. Once your group is registered, you will remain in our files.</p>
+
+    <h2>May I send in other ‘label saving’ program labels with the IGA Exclusive Brand labels?</h2>
+    <p>No. Only IGA Exclusive Brand product labels may be used for the Hometown Proud Labels Program.</p>
+
+    <h2>How do I find an organization’s non-profit number?</h2>
+    <p>Contact a representative at the non-profit organization you wish to donate on behalf of and ask for their non-profit number.</p>
+
+    <h2>How can I keep track of how much money has been raised for my organization?</h2>
+    <p>The program coordinator at your organization and your designated IGA store location will receive a notification of donated funds. </p>
+
+    <h2>When will my organization receive payment?</h2>
+    <p>Upon verifying the bundles of labels received, IGA will issue checks monthly to the designated organizations.</p>
+  </section>
+    
+
+
+</div><!--content-->
+  <footer>
+    <p>Copyright &copy; 2016 IGA, INC. All Rights Reserved.<br />8745 W. Higgins Road, Suite 350, Chicago, IL 60631</p>
+  </footer>
+
+</div><!--container-->
+
+<script>
+ 
+$(function(){
+ 
+  $(document).on( 'scroll', function(){
+ 
+    if ($(window).scrollTop() > 100) {
+      $('.scroll-top-wrapper').addClass('show');
+    } else {
+      $('.scroll-top-wrapper').removeClass('show');
+    }
+  });
+});
+</script>
+
+<script>
+ 
+$(function(){
+ 
+  $(document).on( 'scroll', function(){
+ 
+    if ($(window).scrollTop() > 100) {
+      $('.scroll-top-wrapper').addClass('show');
+    } else {
+      $('.scroll-top-wrapper').removeClass('show');
+    }
+  });
+ 
+  $('.scroll-top-wrapper').on('click', scrollToTop);
+});
+ 
+function scrollToTop() {
+  verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
+  element = $('body');
+  offset = element.offset();
+  offsetTop = offset.top;
+  $('html, body').animate({scrollTop: offsetTop - 48}, 500, 'linear');
+}
+</script>
+
+</body>
+</html>
